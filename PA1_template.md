@@ -54,7 +54,7 @@ Based on the dataset, ignoring missings values, the mean is 9354 and the median 
 
 ```r
 par(mfrow=c(1,1))
-hist(activity_day.df$sum_steps,main="Histogram of daily activity - steps pr. day")
+hist(activity_day.df$sum_steps,main="Histogram of daily activity - steps pr. day",xlab="Number of steps pr. day")
 ```
 
 ![plot of chunk histogram_of_daily_activity](figure/histogram_of_daily_activity.png) 
@@ -155,7 +155,7 @@ This is as expected, because imputing data will make the number of steps on a da
 
 ```r
 par(mfrow=c(1,1))
-hist(new_activity_day.df$sum_steps,main="Histogram of daily activity(imputed data) - steps pr. day")
+hist(new_activity_day.df$sum_steps,main="Histogram of daily activity(imputed data) - steps pr. day",xlab="Number of steps pr. day")
 ```
 
 ![plot of chunk histogram_of_daily_activity_imputed](figure/histogram_of_daily_activity_imputed.png) 

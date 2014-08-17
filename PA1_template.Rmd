@@ -50,7 +50,7 @@ Based on the dataset, ignoring missings values, the mean is `r mean_steps_pr_day
 
 ```{r histogram_of_daily_activity}
 par(mfrow=c(1,1))
-hist(activity_day.df$sum_steps,main="Histogram of daily activity - steps pr. day")
+hist(activity_day.df$sum_steps,main="Histogram of daily activity - steps pr. day",xlab="Number of steps pr. day")
 ```
 
 As the plot abowe shows - the histogram shows a skewed distribution, skewed towards a lower than avarage number on steps.
@@ -142,7 +142,7 @@ This is as expected, because imputing data will make the number of steps on a da
 
 ```{r histogram_of_daily_activity_imputed}
 par(mfrow=c(1,1))
-hist(new_activity_day.df$sum_steps,main="Histogram of daily activity(imputed data) - steps pr. day")
+hist(new_activity_day.df$sum_steps,main="Histogram of daily activity(imputed data) - steps pr. day",xlab="Number of steps pr. day")
 ```
 
 A graph on dayly activity is plotted based on the impluded dataset.
